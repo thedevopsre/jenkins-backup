@@ -12,7 +12,7 @@ For backup you need to AWS account S3 bucket and Linux Server where Jenkins.
 Linux steps.
 1. sudo su
 2. cd ~/
-3. git clone https://github.com/vndark/jenkinsbackup.git
+3. git clone https://github.com/vndark/jenkins-backup-s3.git
 4. mkdir permanent && mkdir tmp
 5. If have mount disk example ` mount sdb1 /jenkinsbackup
    and create permanent and tmp dir in jenkinsbackup
