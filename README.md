@@ -1,4 +1,4 @@
-# How work backup ?
+# How backup works ?
 
 Jenkins plugin Periodic Backup Manager create backup into jenkins server with tar.gz
 After it , cronjob automate run script , script checking into directory where stored tar.gz
