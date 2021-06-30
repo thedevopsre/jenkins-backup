@@ -5,7 +5,6 @@ After it , cronjob automate run script , script checking into directory where st
 If have backup.tar.gz , script automaticly push to s3 and delete after pushing.
 All steps are automatically you can only monitoring for stability
 
-# Jenkins Backup Guide
 
 ### For backup you need to AWS account S3 bucket and Linux Server where Jenkins.
 
