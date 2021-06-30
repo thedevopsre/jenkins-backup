@@ -9,7 +9,7 @@ All steps are automatically you can only monitoring for stability
 
 ## For backup you need to AWS account S3 bucket and Linux Server where Jenkins.
 
-Linux steps.
+# Linux steps.
 1. sudo su
 2. cd ~/
 3. git clone https://github.com/vndark/jenkins-backup-s3.git
@@ -18,12 +18,12 @@ Linux steps.
    and create permanent and tmp dir in jenkinsbackup
 6. Open jenkins-backup-s3.sh via nano or vim , and edit path to directory
    
-AWS S3 steps.
+# AWS S3 steps.
 1. Go to S3 and create bucket example ` backup-jenkins or jenkins-backup.
 2. Copy bucket url and paste into jenkins-backup-s3.sh on the line where s3 cp url
 3. You can enable versioning and configure lifecycle rule for replace backup file and save old versions.
 
-Jenkins steps.
+# Jenkins steps.
 1. Go to manage plugins
 2. Install plugin "Periodic Backup Manager"
 3. Go to settings Jenkins scroll down open Periodic Backup Manager
@@ -33,7 +33,7 @@ Jenkins steps.
 7. Storage Strategy - tar.gz
 8. Backup Location example ` /root/permanent  and press ENABLE THIS LOCATION.
 
-Cron job steps.
+# Cron job steps.
 1. crontab -e with nano or vim
 2. You can generate time on website > https://crontab.guru
 3. Your job in cron , set time after Periodic Backup Manager Backup example `  * * * * * /root/jenkins-backup-s3.sh
