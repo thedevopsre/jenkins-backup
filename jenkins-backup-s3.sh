@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# You can setup script for cronjob
+# You can setup script for cronjob command -> crontab -e | after changing and saving -> service cron reload
 # 0 7 * * * /root/jenkins-backup-s3.sh
 
 #SCRIPT backup and PUSH TO AWS S3
